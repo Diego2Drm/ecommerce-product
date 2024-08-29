@@ -1,0 +1,53 @@
+/* Header */
+.header{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background: var(--White);
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+.divLogo{
+    display: flex;
+    gap: 0 1rem;
+    align-items: center;
+}
+.divAvatar{
+    display: flex;
+    align-items: center;
+    gap: 0 3rem;
+}
+.avatar{
+    width: 3rem;
+    height: 3rem;
+}
+
+/* SideNav */
+.close{
+    display: none;
+}
+.asideNav{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--Black);
+    position: absolute;
+    inset: 0;
+}
+.nav{
+    background-color: var(--White);
+    width: 70%;
+    height: 100%;
+    padding: 2rem;
+    box-shadow: 1rem 0 1rem rgba(255, 255, 255, .4);
+    border-radius: 0 .5rem .5rem 0;
+}
+.list{
+    margin-block-start: 2rem;
+    list-style: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 0;
+}
