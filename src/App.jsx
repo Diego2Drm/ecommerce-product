@@ -1,14 +1,14 @@
-import Style from "./index.module.css"
-
-
+import { Header } from "./Components/Header/Header";
+import Style from "./index.module.css";
 
 function App() {
   
+
   return (
     <>
-      <h1 className={Style.title}>Hello World!!</h1>
+      <Header/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
