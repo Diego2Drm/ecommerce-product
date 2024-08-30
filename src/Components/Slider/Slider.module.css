@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.slide {
+  max-width: 100%;
+  height: auto;
+}
+.btn {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--White);
+  border-radius: 50%;
+  border: none;
+}
+.btnPrevious {
+  left: 1rem;
+  top: 50%;
+}
+.btnNext {
+  right: 1rem;
+  top: 50%;
+}
+.img {
+  width: 37.5rem;
+  height: 30rem;
+}
