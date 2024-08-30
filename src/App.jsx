@@ -1,12 +1,17 @@
 import { Header } from "./Components/Header/Header";
-import Style from "./index.module.css";
+import { Slider } from "./Components/Slider/Slider";
+import { Layout } from "./Layout";
 
 function App() {
   
 
   return (
     <>
+    <Layout>
       <Header/>
+      <Slider />
+
+    </Layout>
     </>
   );
 }

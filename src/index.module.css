@@ -28,8 +28,10 @@ html{
   font-family: "Kumbh Sans", sans-serif;
 }
 
-.title{
-  font-size: 3rem;
+.layout{
+  width: 100%;
+  min-height: 100vh;
+  padding-block: 7rem;
 }
 
 
