@@ -5,9 +5,11 @@ import logo from "../../assets/Icons/logo.svg";
 import iconcart from "../../assets/Icons/icon-cart.svg";
 import avatar from "../../assets/images/image-avatar.png";
 import { SideNav } from "./SideNav";
+import { ModalCart } from "../ModalCart/ModalCart";
 
 function Header() {
   const [open, setOpen] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   return (
     <header className={style.header}>
@@ -17,7 +19,13 @@ function Header() {
       </div>
 
       <div className={style.divAvatar}>
-        <img src={iconcart} alt="cart" />
+        <div className={style.Modal}>
+          <img src={iconcart} alt="cart" 
+          onClick={() => setOpenModal(!openModal)}
+          />
+          <ModalCart openModal={openModal} />
+        </div>
+
         <img className={style.avatar} src={avatar} alt="avatar" />
       </div>
 
