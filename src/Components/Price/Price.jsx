@@ -14,12 +14,8 @@ function Price() {
 
         <p className={style.priceOriginal}>$250</p>
       </div>
-      <div className={style.counter}>
-        <Counter />
-      </div>
-      <div className={style.add} >
-        <AddCart />
-      </div>
+      
+      <Counter />
     </section>
   );
 }

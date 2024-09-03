@@ -19,6 +19,26 @@
     align-items: center;
     gap: 0 3rem;
 }
+.containerCart{
+    position: relative;
+}
+.shoesCount{
+    position: absolute;
+    text-align: center;
+    padding-block-start: .2rem;
+    width: 2rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+    background: var(--Orange);
+    color: var(--White);
+    font-size: 1rem;
+    top: -.8rem;
+    right: -.5rem;
+    font-weight: 700;
+}
+.none{
+    display: none;
+}
 .avatar{
     width: 3rem;
     height: 3rem;

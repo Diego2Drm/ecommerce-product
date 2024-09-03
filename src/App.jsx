@@ -1,3 +1,4 @@
+import { ShoppingShoesProvider } from "./Components/Context/Context";
 import { Description } from "./Components/Description/Description";
 import { Header } from "./Components/Header/Header";
 import { Price } from "./Components/Price/Price";
@@ -9,12 +10,14 @@ function App() {
 
   return (
     <>
-    <Layout>
-      <Header/>
-      <Slider />
-      <Description />
-      <Price />
-    </Layout>
+      <ShoppingShoesProvider>
+        <Layout>
+          <Header />
+          <Slider />
+          <Description />
+          <Price />
+        </Layout>
+      </ShoppingShoesProvider>
     </>
   );
 }

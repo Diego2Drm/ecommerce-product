@@ -68,6 +68,11 @@
   align-items: center;
   box-shadow: 0 0.5rem 2rem rgba(255, 125, 26, 1);
 }
+.btnAddDisable{
+  opacity: .5;
+  pointer-events: none;
+  box-shadow: none;
+}
 .btnAdd img {
   width: 1.5rem;
   height: 1.5rem;
