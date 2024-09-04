@@ -83,3 +83,18 @@
   align-items: center;
   padding: 1.5rem;
 }
+
+@media (min-width: 768px) {
+  .containerCart{
+    left: initial;
+    right: 2rem;
+    top: 8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .containerCart{
+    left: initial;
+    right: 10rem;
+    top: 8rem;
+  }
+}
