@@ -17,8 +17,9 @@ function Header() {
   return (
     <header className={style.header}>
       <div className={style.divLogo}>
-        <img src={iconMenu} alt="menu" onClick={() => setOpen(!open)} />
+        <img className={style.iconMenu} src={iconMenu} alt="menu" onClick={() => setOpen(!open)} />
         <img src={logo} alt="logo" />
+        <SideNav open={open} setOpen={setOpen} />
       </div>
 
       <div className={style.divAvatar}>
@@ -39,7 +40,7 @@ function Header() {
         <img className={style.avatar} src={avatar} alt="avatar" />
       </div>
 
-      <SideNav open={open} setOpen={setOpen} />
+      
     </header>
   );
 }

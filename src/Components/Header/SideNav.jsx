@@ -5,7 +5,7 @@ function SideNav({ open, setOpen }) {
   return (
     <aside className={open ? style.asideNav : style.close}>
       <nav className={style.nav}>
-        <img src={iconClose} alt="close" onClick={() => setOpen(!open)} />
+        <img className={style.iconClose} src={iconClose} alt="close" onClick={() => setOpen(!open)} />
         <ul className={style.list}>
           <li>Collections</li>
           <li>Men</li>

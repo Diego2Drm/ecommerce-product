@@ -34,4 +34,9 @@ html{
   padding-block: 7rem;
 }
 
+@media (min-width: 1024px) {
+  .layout{
+    padding-inline: 10rem;
+  }
+}
 
