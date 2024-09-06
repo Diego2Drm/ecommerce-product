@@ -1,0 +1,12 @@
+.imageContainer{
+    display: none;
+}
+.thumbnail:nth-child(4){
+    border: 2px solid blue;
+}
+@media (min-width: 1024px) {
+    .imageContainer{
+        display: initial;
+        width: 70%;
+    }
+}
