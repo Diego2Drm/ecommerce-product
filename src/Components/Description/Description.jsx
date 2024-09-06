@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Description.module.css"
+import { Price } from "../Price/Price";
 
 function Description() {
   return (
@@ -11,6 +12,7 @@ function Description() {
         Featuring a durable rubber outer sole, they’ll withstand everything the
         weather can offer.
       </p>
+      <Price />
     </section>
   );
 }

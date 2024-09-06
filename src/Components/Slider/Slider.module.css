@@ -31,3 +31,9 @@
   width: 37.5rem;
   height: 30rem;
 }
+
+@media (min-width: 1024px) {
+  .container{
+    display: none;
+  }
+}

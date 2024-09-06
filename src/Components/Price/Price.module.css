@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  padding: 3rem 2rem;
 }
 .price {
   display: flex;
@@ -43,16 +43,25 @@
 .minusAllowed{
   cursor: not-allowed;
   opacity: .3;
+  width: 1.5rem;
+  height: 1rem;
 }
 .minus{
   opacity: 1;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1rem;
 }
 
 .quantityProduct {
   font-size: 1.6rem;
   font-weight: 700;
 }
-
+.plus{
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
 .add {
   width: 100%;
 }
@@ -67,6 +76,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 0.5rem 2rem rgba(255, 125, 26, 1);
+  cursor: pointer;
 }
 .btnAddDisable{
   opacity: .5;
@@ -85,3 +95,26 @@
   color: var(--Very-dark-blue);
 }
 
+@media (min-width: 1024px) {
+  .priceContainer{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-block-start: 4rem;
+  }
+  .price {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+  }
+  .counter {
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
+    width: 60%;
+    padding: 2rem 1rem;
+    margin: 0;
+  }
+  .btnAdd {
+    padding: 2rem 1rem;
+  }
+}

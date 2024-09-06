@@ -12,13 +12,24 @@
   display: inline-block;
 }
 
-.title{
-   font-size: 3rem;
-   margin-block-end: 1rem;
+.title {
+  font-size: 3rem;
+  margin-block-end: 1rem;
 }
-.info{
-   font-size: 1.5rem;
-   color: var(--Grayish-Blue);
-   font-weight: 700;
-   line-height: 2.5rem;
+.info {
+  font-size: 1.5rem;
+  color: var(--Grayish-Blue);
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+@media (width > 1024px) {
+  .container {
+    padding-inline-end: 23rem;
+  }
+  .title {
+    padding-inline-end: 1rem;
+    font-size: 3.5rem;
+
+  }
 }

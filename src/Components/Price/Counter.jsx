@@ -30,7 +30,7 @@ function Counter() {
   }
   
   return (
-    <>
+    <section className={style.priceContainer}>
       <div className={style.counter}>
         <img
           src={minus}
@@ -39,12 +39,12 @@ function Counter() {
           className={quantity == 0 ? style.minusAllowed : style.minus}
         />
         <p className={style.quantityProduct}>{quantity}</p>
-        <img src={plus} alt="plus" onClick={plusQuantity} />
+        <img src={plus} alt="plus" onClick={plusQuantity} className={style.plus}/>
       </div>
       <div className={style.add}>
         <AddCart addShoes={addShoes} quantity={quantity}/>
       </div>
-    </>
+    </section>
   );
 }
 

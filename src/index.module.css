@@ -38,5 +38,11 @@ html{
   .layout{
     padding-inline: 10rem;
   }
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
 }
 
