@@ -23,6 +23,9 @@
 .containerCart {
   position: relative;
 }
+.containerCart img{
+  cursor: pointer;
+}
 .shoesCount {
   position: absolute;
   text-align: center;
@@ -43,6 +46,11 @@
 .avatar {
   width: 3rem;
   height: 3rem;
+  cursor: pointer;
+}
+.avatar:hover{
+  border: .2rem solid var(--Orange);
+  border-radius: 50%;
 }
 
 /* SideNav */
@@ -86,11 +94,28 @@
   flex-direction: column;
   gap: 2rem 0;
 }
- 
+.list li{
+  cursor: pointer;
+}
+.list li:hover{
+  transition: all 1s ease;
+  border: none;
+  animation-duration: 5s;
+  box-shadow: 1rem 1rem 1rem var(--Orange);
+  transform: translateY(2px);
+}
 @media (min-width: 768px) {
   .header {
     justify-content: space-around;
     padding: 2rem 0;
+  }
+  .header::after{
+    content: "";
+    width: 75%;
+    height: .2rem;
+    background: var(--Grayish-Blue);
+    position: absolute;
+    bottom: 0;
   }
   .iconMenu,
   .iconClose {
